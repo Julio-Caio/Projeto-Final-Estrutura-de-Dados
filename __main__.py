@@ -30,5 +30,5 @@ if __name__ == "__main__":
         menu()
 
     else:
-        print("Não foi possível cadastrar o usuário")
+        print("Opção inválida!")
         exit()
