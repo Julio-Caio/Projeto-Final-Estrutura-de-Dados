@@ -5,10 +5,10 @@ from Menu import Menu
 
 if __name__ == "__main__":
     menu = Menu()
-    username = input("Digite um nickname de sua escolha: ")
+    email = input("Digite seu e-mail: ")
 
     print(f'''
-    Bem-Vindo ao Gerenciador de Jogos, {username}! Faça seu login!
+    Bem-Vindo ao Gerenciador de Jogos, {email}! Como deseja entrar?
     ===================================
     | (1) Entrar com token de acesso   |
     ===================================
@@ -18,7 +18,7 @@ if __name__ == "__main__":
 
     database = Database()
     opcao = int(input('> Escolha sua opção de login: '))
-    user = User(username)
+    user = User(email)
     database.cadastrar(user, opcao)
     
     if opcao == 1:
